@@ -1,7 +1,7 @@
 .topnav{
     position :relative;
     top:60%;
-    left:-110%;
+    left:-95%;
 }
 
 .form-inline{
@@ -43,7 +43,7 @@ body{
 
 .nav-links li{
   list-style: none;
-  margin: 0 12px;
+  margin: 0 15px;
   letter-spacing: 1px;
 }
 
