@@ -1,24 +1,25 @@
-.topnav{
+.topnav @media {
     position :relative;
     top:60%;
-    left:-95%;
+    left:-100%;
 }
 
-.form-inline{
+.form-inline  {
     position :relative;
-    top:50%;
-    left:-20%;
+    top:-250%;
+    left: 30%;
 }
 
-.container{
+.container @media{
  position: relative;
  height: 400px;
- left:20%;
+ width: auto;
 }
 
-.container{
- position: absolute;
- bottom: 0;
+.container @media{
+    position: absolute;
+    bottom: 0;
+    place-items: center;
 }
 
 .text {
@@ -32,19 +33,21 @@ body{
   background: white;
 }
 
-.nav-links{
+.nav-links {
   display: flex;
   align-items: center;
+  text-align: center;
   background: #FFFFFF;
-  padding: 20px 940px;
-  border-radius: 20px;
+  padding: 20px 711px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+
 }
 
 .nav-links li{
   list-style: none;
   margin: 0 15px;
   letter-spacing: 1px;
+  text-align: center;
 }
 
 .nav-links li a{
@@ -109,20 +112,38 @@ body{
 }
 .container{
   z-index: 12;
-  max-width: 1050px;
+  max-width: 1000px;
   width: 100%;
   background: #fff;
   border-radius: 12px;
   margin: 0 20px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 
+
 }
-.container{
+.container {
     margin: 0 auto;
     width: 900px;
-    top: 35%;
+    top: 50%;
     left:27%;
+    place-items: center;
 }
+
+.container p-5 my-5 border{
+    margin: 0 auto;
+    width: 700px;
+    top: 50%;
+    left:27%;
+    place-items: center;
+}
+.bottom .p{
+    margin: 0 auto;
+    width: 900px;
+    top: 30%;
+    left:50%;
+    text-align: center;
+}
+
 .container .content{
   display: flex;
   align-items: center;
@@ -151,7 +172,6 @@ body{
   margin: 16px 0;
   position: relative;
 }
-
 
 .content .input-box input{
   position: absolute;
@@ -218,10 +238,84 @@ body{
   }
 }
 
+footer{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background:#333;
+  text-align: center;
+  place-items: center;
+}
 
+footer .bottom p{
+  color: white;
+  position: center;
+}
 
+footer a:hover{
+  color: blue;
+}
 
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+body{
+  display: grid;
+  height: 100%;
+  place-items: center;
 
+}
 
-
-
+.slider{
+  max-width: 1100px;
+  display: flex;
+}
+.slider .card{
+  flex: 1;
+  margin: 0 10px;
+  background: #fff;
+}
+.slider .card .img{
+  height: 200px;
+  width: 100%;
+}
+.slider .card .img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.slider .card .content {
+  padding: 10px 20px;
+}
+.card .content .title {
+  font-size: 25px;
+  font-weight: 600;
+}
+.card .content .sub-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #e74c3c;
+  line-height: 20px;
+}
+.card .content p{
+  text-align: justify;
+  margin: 10px 0;
+}
+.card .content .btn {
+  display: block;
+  text-align: left;
+  margin: 10px 0;
+}
+.card .content .btn button {
+  background: #0083FF;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.card .content .btn button:hover {
+  transform: scale(0.9);
+}
